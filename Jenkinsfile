@@ -14,7 +14,7 @@ pipeline {
         }
         stage('review') {
             steps {
-               sh 'mvn pmd:pmd'
+               sh 'mvn review'
             }
         }
         stage('test') {
